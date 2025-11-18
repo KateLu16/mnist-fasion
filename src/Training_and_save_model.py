@@ -60,7 +60,7 @@ def build_model(input_dim):
 
 def train_and_save_model(model, X, y, X_val, y_val, save_path):
     print("3. Start training...")
-    model.train(X, y, validation_data=(X_val, y_val), epochs=1000, print_every=10)
+    model.train(X, y, validation_data=(X_val, y_val), epochs=100, print_every=10)
 
     print("\n4. Saving model to:", save_path)
     model.save_parameters(save_path)
@@ -77,3 +77,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
